@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/*
+font-family: 'Red Hat Display', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+.container
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 435px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 18px 20px 0px hsl(224deg 73% 79%);    
+}
+.container.hero
+{
+    width: inherit;
+}
+
+.text_content{
+    padding: 8%;
+    text-align: center;
+
+}
+.title
+{
+    color: hsl(223, 47%, 23%);
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.text_content p.subtitle
+{
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 25px;
+}
+
+.plan_box
+{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan_box_left
+{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.plan_box_left div
+{
+    margin-left: 20px;
+}
+
+.plan_box_left div h5
+{
+    font-weight: 900;
+    font-size: 16px;
+    color: hsl(223, 47%, 23%);
+    padding-bottom: 4px;
+}
+
+.plan_box_left div p
+{
+    font-weight: 700;
+    font-size: 17px;
+    color: hsl(224, 23%, 55%);
+    
+}
+
+.plan_box a
+{
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.plan_box a:hover
+{
+    color:hsl(245, 83%, 74%) ;
+    text-decoration: none;
+}
+
+a.proceed_btn
+{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 15px 0;
+    border-radius: 12px;
+    font-weight: 700;
+    margin: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 9px 20px 0px hsl(224deg 73% 79%);
+}
+
+a.proceed_btn:hover
+{
+    background-color:hsl(245, 83%, 74%)  ;
+}
+
+a.cancel_btn
+{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    word-spacing: -1px;
+}
+
+a.cancel_btn:hover
+{
+    color: hsl(223, 47%, 23%);
+}
+
+
+
+@media only screen and (max-width: 425px)
+{
+    body
+    {
+        background-image: url(./images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+    .container
+    {
+        max-width: 87%;
+    }
+
+    .title
+    {
+        font-size: 23px;
+    }
+
+    .plan_box
+    {
+        padding: 12px;
+    }
+    .plan_box_left div
+    {
+        margin-left: 10px;
+    }
+    a.proceed_btn,a.cancel_btn,.plan_box a
+    {
+        font-size: 12px;
+    }
+
+    .text_content
+    {
+        padding: 8% 7%;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 340px)
+{
+    body
+    {
+        background-image: url(./images/pattern-background-mobile.svg);
+        font-size: 13px;
+    }
+    .container
+    {
+        max-width: 80%;
+    }
+
+    .title
+    {
+        font-size: 20px;
+    }
+
+    .plan_box
+    {
+        padding: 10px;
+    }
+    .plan_box_left div
+    {
+        margin-left: 12px;
+    }
+    a.proceed_btn,a.cancel_btn,.plan_box a
+    {
+        font-size: 11px;
+    }
+    .plan_box a
+    {
+        margin-left: 10px;
+    }
+
+    .text_content
+    {
+        padding: 8% 7%;
+    }
+
+    .plan_box_left div h5
+    {
+        font-size: 11px;
+    }
+
+    .plan_box_left div p
+    {
+        font-size: 11px;
+    }
+    
+}
